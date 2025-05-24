@@ -55,6 +55,7 @@ def validate_key():
 def open_admin_login_window():
     login_win = tk.Toplevel()
     login_win.title("เข้าสู่ระบบแอดมิน")
+    login_win.geometry("300x300")
 
     tk.Label(login_win, text="Username:").pack(pady=5)
     username_entry = tk.Entry(login_win)
@@ -147,7 +148,7 @@ def open_admin_dashboard():
 
 root = tk.Tk()
 root.title("Check License Key")
-
+root.geometry("300x300")
 tk.Label(root, text="กรุณาใส่ License Key:").pack(pady=10)
 license_entry = tk.Entry(root, width=40)
 license_entry.pack(pady=5)
